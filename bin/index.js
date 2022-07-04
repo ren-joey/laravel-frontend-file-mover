@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
+#!/usr/bin/env node
 
 require('v8-compile-cache');
 const chalk = require('chalk');
