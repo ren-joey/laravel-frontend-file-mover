@@ -1,0 +1,46 @@
+{
+    "author": "Joey Ren",
+    "bin": {
+        "move-frontend-app": "bin/index.js"
+    },
+    "bugs": {
+        "url": "https://github.com/ren-joey/laravel-frontend-file-mover/issues"
+    },
+    "dependencies": {
+        "chalk": "^4.0.1",
+        "fs-extra": "^10.1.0",
+        "v8-compile-cache": "^2.3.0"
+    },
+    "description": "## 適用情境 1. 您的服務後端使用 php laravel 2. 前端使用 Vue.js 或 React.js 任一框架 3. 您的前後端 git repo 完全分離，且時常需要個別部署",
+    "devDependencies": {},
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "files": [
+        "bin",
+        "config",
+        "scripts",
+        "colorfulConsole",
+        "folderMaker"
+    ],
+    "homepage": "https://github.com/ren-joey/laravel-frontend-file-mover#readme",
+    "license": "MIT",
+    "name": "laravel-frontend-file-mover",
+    "optionalDependencies": {},
+    "peerDependencies": {},
+    "scripts": {
+        "test": "node ./bin/index"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/ren-joey/laravel-frontend-file-mover.git"
+    },
+    "keywords": [
+        "laravel",
+        "frontend",
+        "react",
+        "vue.js",
+        "blade"
+    ],
+    "version": "0.0.1"
+}
