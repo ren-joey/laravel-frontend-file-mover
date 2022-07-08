@@ -25,12 +25,9 @@
     ],
     "homepage": "https://github.com/ren-joey/laravel-frontend-file-mover#readme",
     "license": "MIT",
-    "name": "@ren-joey/laravel-frontend-file-mover",
+    "name": "laravel-frontend-file-mover",
     "optionalDependencies": {},
     "peerDependencies": {},
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/"
-    },
     "scripts": {
         "test": "node ./bin/index"
     },
