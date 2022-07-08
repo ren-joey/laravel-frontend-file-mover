@@ -28,6 +28,9 @@
     "name": "@ren-joey/laravel-frontend-file-mover",
     "optionalDependencies": {},
     "peerDependencies": {},
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
     "scripts": {
         "test": "node ./bin/index"
     },
@@ -42,5 +45,5 @@
         "vue.js",
         "blade"
     ],
-    "version": "0.0.2"
+    "version": "0.0.3"
 }
