@@ -1,5 +1,18 @@
+const fs = require('fs');
 const path = require('path');
+
+let publicPath = '';
 const packageJson = require(path.join(process.cwd(), 'package.json'));
+if (!packageJson.homepage){
+    const vueConfigPath = path.join(process.cwd(), 'vue.config.js');
+    if (fs.existsSync(vueConfigPath)) {
+        // Vue build path
+        publicPath = vueConfigPath.publicPath || ''
+    }
+} else {
+    // React build path
+    publicPath = packageJson.homepage;
+}
 
 module.exports = {
     /**
@@ -41,12 +54,12 @@ module.exports = {
      *      [in] routes/web.php
      *          Route::view('/<name>', 'app/entry');
      */
-    index_file_dest: packageJson.homepage || '',
+    index_file_dest: publicPath,
     index_filename: 'index.blade.php',
 
     /**
      * 靜態檔案放置路徑
      * 該設定取決於前端應用的 homepage 設定位置
      */
-    resources_dest: packageJson.homepage || ''
+    resources_dest: publicPath
 };
