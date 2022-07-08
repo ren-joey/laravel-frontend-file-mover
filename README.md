@@ -8,20 +8,20 @@
 ## 🔰 前置作業
 1. 需要一個 laravel server
 1. 需要一個基於 React.js 或 Vue.js 的前端應用
-1. 請先依照[官方教學](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#authenticating-to-github-packages)完成 github registry 註冊 （只需要完成 Authenticating to GitHub Packages 即可）
 1. 建議先複製你的 laravel server 進行測試，等妳瞭解它的運作模式後再放到正式環境
 
 ---
 
 ## 指定 npm registry
-1. 確認您的 github registry 有安裝成功，執行下列指令你應該可以看到
+如果你想跳過這個步驟，可以直接使用發佈在 npm 的 [laravel-frontend-file-mover](https://www.npmjs.com/package/laravel-frontend-file-mover)
+1. 依照[官方教學](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#authenticating-to-github-packages)完成 github registry 註冊 （只需要完成 Authenticating to GitHub Packages 即可）。
+    如果 github registry 有安裝成功，執行下列指令你應該可以看到
     ```shell
     cat ~/.npmrc
 
     # //npm.pkg.github.com/:_authToken=TOKEN
     ```
-    如果你無法看到 `npm.pkg.github.com` 資訊或檔案不存在，請先依照[官方教學](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#authenticating-to-github-packages)完成 github registry 註冊（只需要完成 Authenticating to GitHub Packages 即可）
-2. 在你的前端應用新增 `.npmrc` 檔案，並新增下列內容
+2. 在你的前端應用新增 `.npmrc` 檔案，並貼上以下內容
     ```
     registry=https://npm.pkg.github.com
     ```
